@@ -3,6 +3,7 @@
 
 backend:
   name: github
+  base_url: https://jkan-sandbox.vercel.app/
 
 media_folder: "img/uploads"
 
