@@ -1,37 +1,18 @@
-title: JKAN
-greeting: Welcome to JKAN
-description: A lightweight, backend-free open data portal, powered by Jekyll.
-logo: /img/jkan.png
-hero_image: /img/homepage-hero.jpg
-
-# Site theme
-jkan_theme: Default
-
-# Dataset schema
+google_analytics:
+  enabled: false
+  code: UA-XXXXXX-1
 schema: default
-
-# Nav bar
-navigation:
-  - title: Datasets
-    url: /datasets/
-  - title: Organizations
-    url: /organizations/
-  - title: Categories
-    url: /categories/
-
-# Collections
-collections:
-  datasets:
-    output: true
-    permalink: /datasets/:path/
-  organizations:
-    output: true
-    permalink: /organizations/:path/
-  dataset_categories:
-    output: true
-    permalink: /categories/:path/
-
-# Collections (cont'd)
+twittercard:
+  enabled: false
+  username: "@"
+digital_analytics_program:
+  enabled: false
+  agency: ""
+  subagency: ""
+opengraph:
+  enabled: true
+logo: /img/jkan.png
+markdown: kramdown
 defaults:
   - scope:
       path: ""
@@ -50,37 +31,29 @@ defaults:
       type: organizations
     values:
       layout: organization
-
-# Markdown settings
-markdown: kramdown
+navigation:
+  - title: Datasets
+    url: /datasets/
+  - title: Organizations
+    url: /organizations/
+  - title: Categories
+    url: /categories/
+collections:
+  datasets:
+    output: true
+    permalink: /datasets/:path/
+  organizations:
+    output: true
+    permalink: /organizations/:path/
+  dataset_categories:
+    output: true
+    permalink: /categories/:path/
 kramdown:
   input: GFM
-
-# Google Analytics
-google_analytics:
-  enabled: false
-  code: "UA-XXXXXX-1"
-
-# US Digital Analytics Program - https://analytics.usa.gov
-digital_analytics_program:
-  enabled: false
-  agency: ""
-  subagency: ""
-
-# Hypothesis.io - Annotator
-hypothesis:
-  enabled: false
-
-# Twitter
-twittercard:
-  enabled: false
-  username: "@"
-
-# Open Graph
-opengraph:
-  enabled: true
-
-# Exclude these files from the build
+hero_image: /img/homepage-hero.jpg
+title: JKAN Sandbox
+jkan_theme: Default
+greeting: Welcome to our test server
 exclude:
   - CONTRIBUTING.md
   - Dockerfile
@@ -98,3 +71,12 @@ exclude:
   - netlify.toml
   - .parcel-cache
   - docs
+hypothesis:
+  enabled: false
+description: >-
+  JKAN is a  lightweight, backend-free open data portal, powered by low-cost,
+  web standards oriented and highly secure static-site technology.
+
+
+  This site was deployed as part of the #PostalData hackathon on June 24, 2023
+baseurl: http://dotpost-jkan.datalets.ch/
