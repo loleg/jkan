@@ -4,6 +4,8 @@
 backend:
   name: github
   base_url: https://jkan-sandbox.vercel.app/
+  repo: loleg/jkan
+  repository branch: dotpost-sandbox
 
 media_folder: "img/uploads"
 
