@@ -50,7 +50,7 @@ collections:
     permalink: /categories/:path/
 kramdown:
   input: GFM
-hero_image: /img/homepage-hero.jpg
+hero_image: https://bucketeer-036aa605-c047-4623-8610-f1764b90cf98.s3.amazonaws.com/upu/6/29G2206S1BV4HWREMCN6KGK8/ezgif4a85be64a67.png
 title: JKAN Sandbox
 jkan_theme: Default
 greeting: Welcome to our test server
@@ -76,7 +76,5 @@ hypothesis:
 description: >-
   JKAN is a  lightweight, backend-free open data portal, powered by low-cost,
   web standards oriented and highly secure static-site technology.
-
-
-  This site was deployed as part of the #PostalData hackathon on June 24, 2023
+  _Site deployed as part of the #PostalData hackathon on June 24, 2023_
 baseurl: http://dotpost-jkan.datalets.ch/
